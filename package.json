@@ -1,0 +1,16 @@
+{
+  "name": "todo-list",
+  "version": "0.0.1",
+  "description": "Ellx Todo example",
+  "main": "src/index.js",
+  "devDependencies": {
+    "@ellx/app": "^0.0.1"
+  },
+  "scripts": {
+    "start": "ellx start",
+    "login": "ellx login",
+    "deploy": "ellx deploy"
+  },
+  "author": "Dmitry Maevsky",
+  "license": "MIT"
+}
