@@ -1,7 +1,8 @@
 version: 1.1
 nodes:
   now = timer(1000)
-  nowText = `Now is ${format(now, 'd-MMM-Y, h:mm:ssaa')}`
+  nowText = await(`Now is ${format(now, 'd-MMM-Y, h:mm:ssaa')}`, () => '...')
+  $1 = router.path
 layout:
 [,,,,
   [,,,
@@ -12,6 +13,19 @@ layout:
   [,,,
     {
       "node": "nowText"
+    }
+  ],,
+  [,,,
+    {
+      "node": "$1"
+    },,
+    {
+      "value": "[foo](/foo)"
+    }
+  ],
+  [,,,,,
+    {
+      "value": "[bar](/bar)"
     }
   ]
 ]

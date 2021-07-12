@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "description": "Ellx Todo example",
   "main": "src/index.js",
+  "type": "module",
   "devDependencies": {
-    "@ellx/app": "^0.0.1"
+    "@ellx/app": "^0.0.5"
   },
   "scripts": {
     "start": "ellx start",
@@ -12,5 +13,9 @@
     "deploy": "ellx deploy"
   },
   "author": "Dmitry Maevsky",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@ellx/router": "^0.1.1",
+    "date-fns": "^2.22.1"
+  }
 }

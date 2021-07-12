@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@arr/every/-/every-1.0.1.tgz#22fe1f8e6355beca6c7c7bde965eb15cf994387b"
   integrity sha512-UQFQ6SgyJ6LX42W8rHCs8KVc0JS0tzVL9ct4XYedJukskYVWTo49tNiMEK9C2HTyarbNiT/RVIRSY82vH+6sTg==
 
-"@ellx/app@^0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@ellx/app/-/app-0.0.1.tgz#c8c88e2e8a049b7cec4a16c43e790ca5dfa92d01"
-  integrity sha512-7tfLA1FirE1nO29agBCwKHySKc4HhD87ykW1F0gLDlimzO+navBreetkG5gPEx67uGb41QQNi9d4DcLk+VYFOQ==
+"@ellx/app@^0.0.5":
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/@ellx/app/-/app-0.0.5.tgz#ed910eef5700e98e063fcd48f31f2765282c8b4b"
+  integrity sha512-TLtvqr5HxcW4ZXpD9q3dAFvKlqN9CFIprZTEsFNKr7Zj1ByPzfSDq00zCv7nSaE2ldLJlVptnTunrLvGBnRzbw==
   dependencies:
     binary-search "^1.3.6"
     chokidar "^3.5.2"
@@ -30,6 +30,13 @@
     svelte "^3.38.3"
     tinyx "^2.2.0"
     ws "^7.5.1"
+
+"@ellx/router@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@ellx/router/-/router-0.1.1.tgz#525e8073c5bf5edab439efbe3ae211423ac5cd4a"
+  integrity sha512-umhPO7vgQvzZnYzfX+mofKimCxEDCV+GOZLmMsAxRWTTJbUTa7gNmoNgsTD7BZIGhqCaLa6yYoHEj1uUAotYGA==
+  dependencies:
+    tinyx "^2.2.0"
 
 "@polka/url@^0.5.0":
   version "0.5.0"
@@ -131,6 +138,11 @@ conclure@^2, conclure@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/conclure/-/conclure-2.0.0.tgz#ff20fb16a7f60642e6a035a19cc4bbd224d3c2b0"
   integrity sha512-ULCdVJtK6g6oKKaY7Ezxil0/Y1yuewNO+/553otNTpfWvAA+Z/qj+WKswanOjLGD4ButZf78t/y8Orhx7YTQ5A==
+
+date-fns@^2.22.1:
+  version "2.22.1"
+  resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-2.22.1.tgz#1e5af959831ebb1d82992bf67b765052d8f0efc4"
+  integrity sha512-yUFPQjrxEmIsMqlHhAhmxkuH769baF21Kk+nZwZGyrMoyLA+LugaQtC0+Tqf9CBUUULWwUJt6Q5ySI3LJDDCGg==
 
 debug@2.6.9:
   version "2.6.9"
