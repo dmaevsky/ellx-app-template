@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "type": "module",
   "devDependencies": {
-    "@ellx/app": "^0.0.5"
+    "@ellx/app": "^0.0.6"
   },
   "scripts": {
     "start": "ellx start",
@@ -15,6 +15,7 @@
   "author": "Dmitry Maevsky",
   "license": "MIT",
   "dependencies": {
+    "@ellx/auth": "^0.3.1",
     "@ellx/router": "^0.1.1",
     "date-fns": "^2.22.1"
   }

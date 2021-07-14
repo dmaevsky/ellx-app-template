@@ -4,6 +4,7 @@ import svelteComponent from "~ellx-hub/lib/utils/svelte.js";
 import App from "./components/App.svelte";
 
 import makeRouter from '@ellx/router';
+import initAuth from '@ellx/auth';
 
 export const app = svelteComponent(App);
 
@@ -15,3 +16,9 @@ export const timer = ms => ({
 });
 
 export const router = makeRouter();
+
+const appId = 'MY-RANDOM-APP';
+
+export const { auth, login, logout } = initAuth({ appId });
+
+export { initFirebase } from '@ellx/auth';

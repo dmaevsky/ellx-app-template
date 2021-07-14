@@ -2,19 +2,58 @@ version: 1.1
 nodes:
   now = timer(1000)
   nowText = await(`Now is ${format(now, 'd-MMM-Y, h:mm:ssaa')}`, () => '...')
+  user = auth
   $1 = router.path
 layout:
-[,,,,
+[,
+  [,,,,,,,
+    {
+      "value": "// $3 = login()"
+    },,,,
+    {
+      "value": "// firebase = initFirebase()"
+    }
+  ],
+  [,,,,,,,
+    {
+      "value": "// $4 = login({ withGoogle: true })"
+    },,,,
+    {
+      "value": "// fb = firebase.auth().signInWithCustomToken(user.authToken)"
+    }
+  ],
+  [,,,,,,,
+    {
+      "value": "// $6 = login({ phone: '+226025', code: '025025' })"
+    }
+  ],
   [,,,
     {
       "node": "now"
     }
-  ],,
+  ],
+  [,,,,,,,
+    {
+      "value": "// $5 = logout()"
+    }
+  ],
   [,,,
     {
       "node": "nowText"
     }
-  ],,
+  ],
+  [,,,,,,,,
+    {
+      "node": "user",
+      "expansion": {
+        "vertical": true,
+        "labelsLeft": true,
+        "secondary": false,
+        "height": 18,
+        "width": 1
+      }
+    }
+  ],
   [,,,
     {
       "node": "$1"
