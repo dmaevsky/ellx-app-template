@@ -19,6 +19,6 @@ export const router = makeRouter();
 
 const appId = 'MY-RANDOM-APP';
 
-export const { auth, login, logout } = initAuth({ appId });
+export const { auth, promises: { login, logout } } = initAuth({ appId });
 
 export { initFirebase } from '@ellx/auth';
