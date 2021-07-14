@@ -38,10 +38,10 @@
   dependencies:
     tinyx "^2.2.0"
 
-"@ellx/router@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@ellx/router/-/router-0.1.1.tgz#525e8073c5bf5edab439efbe3ae211423ac5cd4a"
-  integrity sha512-umhPO7vgQvzZnYzfX+mofKimCxEDCV+GOZLmMsAxRWTTJbUTa7gNmoNgsTD7BZIGhqCaLa6yYoHEj1uUAotYGA==
+"@ellx/router@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@ellx/router/-/router-0.1.2.tgz#80814e0091127d23eaf263026ee1a9b2d5a99cfa"
+  integrity sha512-IbQbk+eqII/QsfpZ033KmD/kyGSGwIt8vSDdpNHpxXE1gRGddRSbyRKu9H6Y0JB3+jukQzyM2jHojwVEXosxyA==
   dependencies:
     tinyx "^2.2.0"
 

@@ -3,7 +3,7 @@ nodes:
   now = timer(1000)
   nowText = await(`Now is ${format(now, 'd-MMM-Y, h:mm:ssaa')}`, () => '...')
   user = auth
-  $1 = router.path
+  currentPath = router.path
 layout:
 [,
   [,,,,,,,
@@ -56,7 +56,7 @@ layout:
   ],
   [,,,
     {
-      "node": "$1"
+      "node": "currentPath"
     },,
     {
       "value": "[foo](/foo)"
