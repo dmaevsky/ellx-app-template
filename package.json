@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "type": "module",
   "devDependencies": {
-    "@ellx/app": "^0.0.7"
+    "@ellx/app": "^0.0.9"
   },
   "scripts": {
     "start": "ellx start",
